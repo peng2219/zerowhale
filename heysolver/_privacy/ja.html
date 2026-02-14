@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - HeySolver</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container { max-width: 680px; margin: 0 auto; }
+        header { text-align: center; padding: 40px 0 30px; }
+        h1 { font-size: 28px; font-weight: 600; margin-bottom: 8px; }
+        .subtitle { color: #86868b; font-size: 15px; }
+        .content {
+            background: #fff;
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        h2 {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: #1d1d1f;
+        }
+        h2:first-child { margin-top: 0; }
+        p { color: #424245; font-size: 15px; margin-bottom: 12px; }
+        ul { padding-left: 20px; margin: 8px 0 16px; }
+        li { color: #424245; font-size: 15px; margin-bottom: 6px; }
+        .sub-list { padding-left: 20px; margin: 4px 0 8px; }
+        .sub-list li { font-size: 14px; color: #515154; margin-bottom: 4px; }
+        .note {
+            background: #f5f5f7;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #515154;
+            margin: 16px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #86868b;
+            font-size: 13px;
+        }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            body { padding: 16px; }
+            .content { padding: 20px; }
+            h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>プライバシーポリシー</h1>
+            <p class="subtitle">HeySolver · 最終更新日：2026年2月12日</p>
+        </header>
+
+        <div class="content">
+            <h2>はじめに</h2>
+            <p>HeySolverは、AIを活用した学習アシスタントです。段階的な説明、ガイド付きの質問、フォローアップ会話を通じて、学生の問題理解をサポートします。本ポリシーでは、当社がお客様の情報をどのように収集、使用、保護するかについて説明します。</p>
+
+            <h2>プライバシーへの取り組み</h2>
+            <p>HeySolverは「データ最小化」の原則に従っています。コア機能の提供に必要なデータのみを処理し、お客様のプライバシーを厳格に保護します。</p>
+
+            <h2>データの収集と処理</h2>
+            <p>コア機能を提供するために、以下のデータを処理します：</p>
+            <ul>
+                <li><strong>アカウント情報</strong>：Apple サインインまたは Google サインインを通じてメールアドレス（共有を選択した場合）を収集します。これはデバイス間のアカウント同期のためにのみ使用されます。</li>
+                <li><strong>問題の画像</strong>：撮影した問題の写真は、問題の認識と分析に使用されます。元の画像はサーバーに保存されません。</li>
+                <li><strong>問題のテキスト</strong>：入力されたテキストは、学習ガイドの生成に使用されます。元のテキストはサーバーに保存されません。</li>
+            </ul>
+            <div class="note">
+                位置情報、連絡先、その他の機密性の高い個人情報は収集しません。
+            </div>
+
+            <h2>情報の利用方法</h2>
+            <ul>
+                <li>AIによる学習説明と学習ガイダンスの提供</li>
+                <li>学習履歴とお気に入りをデバイスにローカル保存</li>
+                <li>データ同期のためのアカウント認証</li>
+            </ul>
+
+            <h2>第三者サービスとデータ共有</h2>
+            <p>コア機能を提供するために、以下の第三者サービスを使用しています：</p>
+            <ul>
+                <li><strong>AIサービス（Google Gemini）</strong>：
+                    <ul class="sub-list">
+                        <li>提供者：Google</li>
+                        <li>送信データ：お客様が送信した問題の画像とテキスト</li>
+                        <li>目的：問題認識、学習ガイド生成、フォローアップチャット</li>
+                        <li>データ保護：すべての通信はHTTPS暗号化を使用します。データはリアルタイム処理にのみ使用され、広告やモデルトレーニングには使用されません（<a href="https://ai.google.dev/terms" target="_blank">Google AI利用規約</a>をご参照ください）</li>
+                    </ul>
+                </li>
+                <li><strong>認証（Supabase）</strong>：
+                    <ul class="sub-list">
+                        <li>目的：安全なユーザー認証とアカウント管理</li>
+                        <li>必要最低限のアカウント情報のみ保存されます</li>
+                    </ul>
+                </li>
+                <li><strong>iCloud（Apple）</strong>：
+                    <ul class="sub-list">
+                        <li>目的：デバイス間のデータ同期（オプション）</li>
+                        <li>データはお客様のプライベート iCloud コンテナに保存されます</li>
+                        <li>アプリ設定からいつでも iCloud 同期を無効にできます</li>
+                    </ul>
+                </li>
+                <li><strong>決済（Apple）</strong>：
+                    <ul class="sub-list">
+                        <li>すべてのサブスクリプションおよび購入取引は Apple が処理します</li>
+                        <li>当社はお客様の金融情報を収集またはアクセスしません</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>データが共有される場合</h2>
+            <p>以下の場合にのみ、AI サービスにデータが送信されます：</p>
+            <ul>
+                <li>「写真認識」使用時：問題の写真</li>
+                <li>「問題入力」使用時：問題のテキスト</li>
+                <li>「フォローアップチャット」使用時：チャットメッセージと現在の問題のコンテキスト</li>
+            </ul>
+
+            <h2>データセキュリティ</h2>
+            <ul>
+                <li><strong>通信セキュリティ</strong>：すべてのネットワーク通信はHTTPS暗号化を使用し、転送中のデータの機密性と完全性を確保します。</li>
+                <li><strong>保存セキュリティ</strong>：元の画像と学習データは、デバイスまたはプライベート iCloud コンテナにローカル保存されます。</li>
+                <li><strong>プライバシー保証</strong>：ターゲット広告のためにデータを使用することはなく、モデルトレーニングや二次利用のために第三者とデータを共有することもありません。</li>
+            </ul>
+
+            <h2>お客様の権利</h2>
+            <ul>
+                <li>アプリ内でデータの確認と削除</li>
+                <li>いつでもアカウントを削除可能 — すべてのデータが完全に削除されます</li>
+                <li>iCloud 同期を無効にして、データをデバイスのみに保持</li>
+            </ul>
+
+            <h2>お子様のプライバシー</h2>
+            <p>HeySolverは学生向けに設計されています。保護者の同意なく13歳未満のお子様の個人情報を意図的に収集することはありません。そのような情報が収集されたと思われる場合は、すぐにご連絡ください。</p>
+
+            <h2>ポリシーの更新</h2>
+            <p>本ポリシーに重要な変更がある場合は、アプリを通じてお知らせします。</p>
+
+            <h2>お問い合わせ</h2>
+            <p>本プライバシーポリシーに関するご質問は、<a href="mailto:peng2219@qq.com">peng2219@qq.com</a> までお問い合わせください。</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 HeySolver</p>
+        </footer>
+    </div>
+</body>
+</html>
